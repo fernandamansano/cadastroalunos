@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inscrição</title>
     <link rel="stylesheet" href="menu.css">
-    <script src="validacao.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.3/dist/sweetalert2.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -16,13 +13,12 @@
     <nav>
         <h2>Menu</h2>
         <ul>
-            <li><a href="index.html">Cadastro</a></li>
-            <li><a href="lista.php">Lista de Cadastro</a></li>
+            <li><a href="index.html">Cadastro de Alunos</a></li>
+            <li><a href="lista.php">Lista de Alunos</a></li>
         </ul>
     </nav>
     <section>
-        <form id="cadastro">
-
+        <form action="cadastrar.php" method="POST" id="cadastro">
             <fieldset>
                 <legend>Dados do Aluno</legend>
                 <label for="nome">Nome:</label>
@@ -32,9 +28,9 @@
                 <input type="text" name="ra" id="ra" required><br><br>
 
                 <label>Sexo:</label>
-                <input type="radio" name="sex" value="masculino" id="masc">
+                <input type="radio" name="sexo" value="masculino" id="masc">
                 <label for="masc">Masculino</label><br>
-                <input type="radio" name="sex" value="feminino" id="fem">
+                <input type="radio" name="sexo" value="feminino" id="fem">
                 <label for="fem">Feminino</label><br><br>
 
                 <label for="idade">Idade:</label>
